@@ -13,13 +13,14 @@
 
     <!-- Convert this to an external style sheet -->
 
-    <link href="css/site.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
         <div class="container-fluid">
+            <img src="/img/RocketLogo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
             <a class="navbar-brand" href="#">Rocket Motivation</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,20 +31,40 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Main Content Section-->
-    <main class="content pt-5">
-        <div class="container">
+    <main class="content pt-1 text-light">
+        <div class="d-flex justify-content-start align-items-center p-5 h-100">
+            <div class="col col-md-5">
+                <link href="css/site.css" rel="stylesheet">
+                <link rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap">
+                <style>
+                    body {
+                        font-family: "Roboto", serif;
+                    }
+                </style>
+                <h1>NEVER GIVE UP</h1>
+                <h1>ON YOUR DREAMS</h1>
+                <h6>LEARN TO CODE AND START A NEW CAREER!</h6>
+                <button type="button" class="btn btn-warning">START TODAY!</button>
+            </div>
 
         </div>
     </main>
     <!--Footer Section-->
     <footer class="footer">
-        <div class="container-fluid py-3">
-            <span class="text-muted">Rocket Motivation</span>
+        <div class="container-fluid text-center">
+            <span class="text-muted"> &copy;2022 Rocket Motivation</span>
         </div>
     </footer>
     <!-- Bootstrap JS -->
