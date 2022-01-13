@@ -22,88 +22,110 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
+}
+
+.bodyBG {
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url(/img/LandingPage_576.png) var(--cf-darblue);
+    background-position: top center;
     background-repeat: no-repeat;
 }
 
-.bodyfont {
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .content {
     flex: 1 0 auto;
 }
+.mainTitle{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-family: 'Racing Sans One', sans-serif;
 
-h1 {
-    font-size: 70px;
 }
-h6 {
-    font-size: 25px;
+
+.subTitle{
+    font-size: .95rem;
+    line-height: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .06rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* xsmall devices (portrait phones, more than 576px) */
+@media (min-width: 575.98px) {
+   .bodyBG {
+       background: url("/img/LandingPage_768.png"), var(--cf-darkblue);
+       background-position: top right;
+       background-repeat: no-repeat;
+
+   }
+
+   .mainTitle{
+       font-size: 3.5rem;
+       line-height: 3rem;
+       font-family: 'Racing Sans One', sans-serif;
+   }
+
+   .subTitle{
+       font-size: 1.3rem;
+       line-height: 2rem;
+       font-weight: 200;
+       letter-spacing: .10rem;
+       font-family: 'Fira Sans', sans-serif;
+
+   }
     
 }
 
-
-/* break points
-576
-768
-992
-1200
-1400
-1920
-*/
-
-
-
-
-@media (min-width: 576px){
-    .img-fluid {
-        background-image: url(/img/LandingPage_576.png);
-        max-width: 100%;
-        height: auto;
+@media (min-width: 767.98px) {
+    .bodyBG {
+        background: url("/img/LandingPage_992.png"), var(--cf-darkblue);
+        background-position: top right;
+        background-repeat: no-repeat;
+ 
     }
-    
-}
-@media (min-width: 768px){
-    .img-fluid {
+     
+ }
+@media (min-width: 991.98px) {
+    .bodyBG {
+        background: url("/img/LandingPage_1200.png"), var(--cf-darkblue);
+        background-position: top right;
+        background-repeat: no-repeat;
+ 
+    }
+     
+ }
+@media (min-width: 1199.98px) {
+    .bodyBG {
+        background: url("/img/LandingPage_1400.png"), var(--cf-darkblue);
+        background-position: top right;
+        background-repeat: no-repeat;
+ 
+    }
+     
+ }
+@media (min-width: 1399.98px) {
+    .bodyBG {
+        background: url("/img/LandingPage_1920.png"), var(--cf-darkblue);
+        background-position: top right;
+        background-repeat: no-repeat;
+ 
+    }
+     .mainTitle{
+         font-size: 5rem;
+         line-height: 4rem;
+         font-family: 'Racing Sans One', sans-serif;
 
-        background-image: url(/img/LandingPage_768.png);
-        max-width: 100%;
-        height: auto;
-    }
-    
+     }
+     .subTitle{
+         font-size: 2rem;
+         line-height: 2.2rem;
+         font-weight: 200;
+         letter-spacing: .06rem;
+         font-family: 'Fire Sans', sans-serif;
+     }
+ }
 
-}
-@media (min-width: 992px){
-    .img-fluid {
-        background-image: url(/img/LandingPage_992.png);
-        max-width: 100%;
-        height: auto;
-    }
-    
-}
-@media (min-width: 1200px){
-    .img-fluid {
-        background-image: url(/img/LandingPage_1200.png);
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-@media (min-width: 1400px){
-    .img-fluid {
-        background-image: url(/img/LandingPage_1400.png);
-        max-width: 100%;
-        height: auto;
-    }
-}
-@media (min-width: 1920px){
-    .img-fluid {
-        background-image: url(/img/LandingPage_1920.png);
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 
 
